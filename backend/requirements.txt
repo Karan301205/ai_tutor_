@@ -3,4 +3,10 @@ uvicorn
 pymupdf
 pytest
 python-multipart
+sentence-transformers
+faiss-cpu
+groq
+python-dotenv
+scikit-learn
+numpy
 
