@@ -1,0 +1,44 @@
+[
+  {
+    "id": "img_1",
+    "filename": "CompressionAndRefraction.png",
+    "title": "Sound Waves Compression and Rarefaction",
+    "keywords": ["sound wave", "compression", "rarefaction", "wave propagation"],
+    "description": "Diagram showing compressions and rarefactions in sound waves"
+  },
+  {
+    "id": "img_2",
+    "filename": "MusicalInstrumentsVibrationChart.png",
+    "title": "Musical Instruments Vibration",
+    "keywords": ["instrument", "vibration", "sound production", "string", "air", "membrane"],
+    "description": "Different musical instruments showing how vibration produces sound"
+  },
+  {
+    "id": "img_3",
+    "filename": "ReflectionOfSound.png",
+    "title": "Reflection of Sound",
+    "keywords": ["reflection", "sound reflection", "echo", "wave reflection"],
+    "description": "Diagram explaining how sound reflects from surfaces"
+  },
+  {
+    "id": "img_4",
+    "filename": "SchoolBellVibration.png",
+    "title": "School Bell Vibration",
+    "keywords": ["bell", "vibration", "sound waves", "sound production"],
+    "description": "Bell vibrating to produce sound waves"
+  },
+  {
+    "id": "img_5",
+    "filename": "VibrationOfRubberBand.png",
+    "title": "Rubber Band Vibration",
+    "keywords": ["rubber band", "vibration", "sound", "oscillation"],
+    "description": "Rubber band vibrating to produce sound"
+  },
+  {
+    "id": "img_6",
+    "filename": "VocalCordsDiagram.png",
+    "title": "Human Vocal Cords",
+    "keywords": ["vocal cords", "voice", "sound production", "air vibration"],
+    "description": "Diagram showing how vocal cords produce sound"
+  }
+]
