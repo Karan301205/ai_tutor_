@@ -1,12 +1,11 @@
+--extra-index-url https://download.pytorch.org/whl/cpu
 fastapi
 uvicorn
 pymupdf
-pytest
 python-multipart
 sentence-transformers
 faiss-cpu
 groq
 python-dotenv
 scikit-learn
-numpy
-
+numpy<2.0.0
