@@ -2,6 +2,10 @@ import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  `${window.location.protocol}//${window.location.hostname}:8000`;
+
 function App() {
   const [isStarted, setIsStarted] = useState(false);
   const [messages, setMessages] = useState([]);
@@ -27,7 +31,7 @@ function App() {
     formData.append("file", selectedFile);
 
     try {
-      await axios.post("https://ai-tutor-8zz1.onrender.com/upload", formData);
+      await axios.post(`${API_BASE_URL}/upload`, formData);
       setIsStarted(true);
     } catch (err) {
       console.error("Upload failed", err);
@@ -46,7 +50,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await axios.post("https://ai-tutor-8zz1.onrender.com/chat", { question });
+      const res = await axios.post(`${API_BASE_URL}/chat`, { question });
       const aiMsg = {
         type: "ai",
         text: res.data.answer,
@@ -109,7 +113,7 @@ function App() {
                 {msg.image && (
                   <div className="image-container">
                     <img
-                      src={`https://ai-tutor-8zz1.onrender.com/static/images/${msg.image.filename}`}
+                      src={`${API_BASE_URL}/static/images/${msg.image.filename}`}
                       alt={msg.image.title}
                     />
                     <span className="image-caption">{msg.image.title}</span>
