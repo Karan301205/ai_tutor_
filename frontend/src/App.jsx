@@ -27,7 +27,7 @@ function App() {
     formData.append("file", selectedFile);
 
     try {
-      await axios.post("http://127.0.0.1:8000/upload", formData);
+      await axios.post("https://ai-tutor-8zz1.onrender.com/upload", formData);
       setIsStarted(true);
     } catch (err) {
       console.error("Upload failed", err);
@@ -46,7 +46,7 @@ function App() {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/chat", { question });
+      const res = await axios.post("https://ai-tutor-8zz1.onrender.com/chat", { question });
       const aiMsg = {
         type: "ai",
         text: res.data.answer,
@@ -109,7 +109,7 @@ function App() {
                 {msg.image && (
                   <div className="image-container">
                     <img
-                      src={`http://127.0.0.1:8000/static/images/${msg.image.filename}`}
+                      src={`https://ai-tutor-8zz1.onrender.com/static/images/${msg.image.filename}`}
                       alt={msg.image.title}
                     />
                     <span className="image-caption">{msg.image.title}</span>
